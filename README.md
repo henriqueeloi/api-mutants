@@ -18,19 +18,26 @@ java -jar target/api-mutants-0.0.1-SNAPSHOT.jar
 ### Na Núvem
 Projeto foi implantado utilizando os serviços da AWS:
 
-Elastic Beanstalk
-DynamoDB
-URL
-http://api-mutants-v1.us-west-2.elasticbeanstalk.com
 
-HTTP states
+Elastic Beanstalk
+
+DynamoDB
+
+URL: http://api-mutants-v1.us-west-2.elasticbeanstalk.com
+
+
+#### HTTP states
+
 Os códigos de status comum de resposta HTTP será usado nesta API.
 
-Media Types
+#### Media Types
+
 application/json
 
-Endpoints
+### Endpoints
+
 Validar DNA Humano para verificar se é um Mutante
+
 POST → /mutant/
 
 Host: lhttp://api-mutants-v1.us-west-2.elasticbeanstalk.com/mutant/
@@ -47,6 +54,8 @@ DNA Mutant:
 Response:
 200 OK
 ```
+
+
 ```
 DNA Humano:
 
@@ -59,7 +68,12 @@ Response:
 ```
 
 #### Retornar Estátisticas
-GET → /stats/ Host: http://api-mutants-v1.us-west-2.elasticbeanstalk.com/stats/ Content-Type: application/json
+
+GET → /stats/ 
+
+Host: http://api-mutants-v1.us-west-2.elasticbeanstalk.com/stats/ 
+
+Content-Type: application/json
 
 ```
 Response: 200 (application/json)
