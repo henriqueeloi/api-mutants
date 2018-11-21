@@ -91,7 +91,7 @@ Response: 200 (application/json)
 Utilizado spring-boot-starter-test para realizar os testes automatizados com mocks
 
 Cobertura de 74.2%
-alt text
+![Test Image](https://raw.githubusercontent.com/henriqueeloi/api-mutants/master/cobertura.png)
 
 Postman
 https://www.getpostman.com/collections/8b74840721496a103a01
