@@ -19,6 +19,6 @@ public class MutantsController {
 	@PostMapping
 	@ResponseStatus(HttpStatus.OK)
 	public void verifyIsMutant(@RequestBody DNASequence dna) throws Exception {
-		mutantService.validDna(dna);
+		mutantService.validIsMutant(dna);
 	}
 }

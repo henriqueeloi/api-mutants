@@ -41,7 +41,7 @@ public class VarifyMutantDNA {
 	}
 	
 	@Test
-	public void mustBeMutnatVerticalSequence() throws Exception {
+	public void mustBeMutantVerticalSequence() throws Exception {
 		String[] dna = { 
 				"ATGCGA",
 				"AAGTGC",

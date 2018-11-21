@@ -18,10 +18,13 @@ public class StatsService {
 	
 	public Stats getStats(){
 				
+		double ratio = 0;
+		
 		int countMutants = humanRepository.count(true);
-		int countHumans = humanRepository.count(true);
-		double ratio = (countHumans != 0) ? countMutants / countHumans : 0;
-		ratio = Math.round(ratio);
+		int countHumans = humanRepository.count(false);
+		if(countHumans > 0) {
+			ratio = (double) countMutants/countHumans;
+		}
 		
 		return new Stats(countMutants, countHumans, ratio);
 	}

@@ -19,7 +19,7 @@ public class MutantService {
 	@Autowired
 	private HumanRepository humanRepository;
 	
-	public void validDna(DNASequence dna) throws Exception {
+	public void validIsMutant(DNASequence dna) throws Exception {
 		
 		ValidateMutant validateMutant = new ValidateMutant();
 		
